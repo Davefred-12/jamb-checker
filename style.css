@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgb(191, 246, 191);
+    width: 52vw;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 1.8em;
+    border-radius: 5px;
+    box-shadow: -1px -3px 13px -1px rgba(0, 0, 0, 0.73);
+    text-align: center;
+}
+
+.header {
+    font-size: 2rem;
+    margin-top: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.para {
+    font-size: .9rem;
+    font-weight: lighter;
+    margin-top: 2em;
+}
+
+hr {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.flexInput {
+    margin-bottom: 4em;
+}
+
+.flexInput label {
+    color: green;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.flexInput span {
+    color: red;
+}
+
+.flexInput input {
+    padding: .6em;
+    border-radius: 10px;
+}
+
+.parentCompulsoryCourse {
+    display: flex;
+    gap: 1em;
+}
+
+.comCourse {
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.compulsoryCourse {
+    width: 50%;
+}
+
+.parentScienceCourse {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.scienceCourse {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+.login {
+    font-size: 15px;
+    padding: 1em 1.5em;
+    width: 40%;
+    color: green;
+    background-color: #fdfdfd;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 2.5em;
+}
+
+.login:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: green;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.comCourse {
+    font-weight: bolder;
+    color: rgb(1, 69, 1);
+    background-color: white;
+}
+
+.comCourse:hover {
+    background-color: rgb(178, 255, 178);
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding: 1.5em;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 0.8rem;
+    }
+
+    .parentCompulsoryCourse {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .compulsoryCourse {
+        width: 100%;
+    }
+
+    .parentScienceCourse {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .scienceCourse {
+        width: 100%;
+    }
+
+    .login {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90vw;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1.2em;
+    }
+
+    .header {
+        font-size: 1.3rem;
+    }
+
+    .para {
+        font-size: 0.75rem;
+    }
+
+    .login {
+        width: 80%;
+    }
+}
